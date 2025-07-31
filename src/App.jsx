@@ -1,23 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-import "./App.css";
-<<<<<<< HEAD
 import Login from "./components/Login/Login";
-=======
 import Language from "./components/Language/Language";
->>>>>>> 85b4ab81dd4bcf74e1567f1fd47ba4293961df84
+import "./App.css";
 
 function App() {
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
     <div className="app-container">
       <Navbar />
-      <Home />
-<<<<<<< HEAD
-      <Login />
-=======
+      {!showLogin ? (
+        <Home onExploreClick={() => setShowLogin(true)} />
+      ) : (
+        <Login />
+      )}
       <Language />
->>>>>>> 85b4ab81dd4bcf74e1567f1fd47ba4293961df84
     </div>
   );
 }
