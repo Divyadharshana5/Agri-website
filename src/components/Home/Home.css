@@ -1,0 +1,56 @@
+.home-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 90%;
+  max-width: 750px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+ 
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.glass-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #90ee90;
+}
+
+.glass-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #00cc66;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 8px #00cc66;
+}
+
+.explore-btn:hover {
+  background-color: #00994d;
+  box-shadow: 0 0 12px #00994d;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
