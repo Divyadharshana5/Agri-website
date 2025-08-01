@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.register-bg{
+    min-height: 100vh;
+  width: 100vw;
+  background: url("../../../public/bg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.glass-card{
+   background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+ border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  max-width: 300px;
+  width: 60%;
+  height:85vh;
+  animation: fadeIn 0.8s ease;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-align: center;
+  font-family: serif;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-color: black;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;
+  font-family: serif;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid #aaa;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0.2rem;
+  transition: border 0.2s;
+  border-color: #222;
+}
+
