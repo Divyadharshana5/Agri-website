@@ -1,8 +1,9 @@
 import React from "react";
 import "./Login.css";
 import logo from "../../../public/logo.png"; // Adjust path if needed
+import Link from "next/link";
 
-const Login = ({ onRegisterClick }) => {
+const Login = ({ onRegisterClick, OnSubmitClick }) => {
   return (
     <div className="login-bg">
       <div className="glass-card">
@@ -25,7 +26,7 @@ const Login = ({ onRegisterClick }) => {
             </a>
           </div>
 
-          <button type="submit" className="login-submit">
+          <button onClick={OnSubmitClick} type="submit" className="login-submit">
             Submit
           </button>
         </form>

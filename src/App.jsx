@@ -31,7 +31,7 @@ function App() {
       case "language":
         return <Language onLanguageSelect={handleLanguageSelect} />;
       case "login":
-        return <Login onRegisterClick={handleRegisterClick} />;
+        return <Login onRegisterClick={handleRegisterClick} OnSubmitClick={handleExploreClick} />;
       case "register":
         return <Register  />;
       default:
