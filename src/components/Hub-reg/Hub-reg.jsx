@@ -4,7 +4,7 @@ import logo from "../../../public/logo.png"; // Adjust path if needed
 
 const HubReg = () => {
   return (
-    <div className="register-bg">
+    <div className="bg">
       <div className="glass-card">
         <img src={logo} alt="Logo" className="logo" />
                 <h1 className="title">Register</h1>

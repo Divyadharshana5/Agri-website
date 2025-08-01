@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-.register-bg{
+.bg{
     min-height: 100vh;
   width: 100vw;
   background: url("../../../public/bg.png") center/cover no-repeat;
@@ -67,6 +67,7 @@
   border-radius: 12px;
   border: 1.5px solid #aaa;
   background: rgba(255, 255, 255, 0.18);
+ text-align: left;
   font-size: 1rem;
   outline: none;
   margin-bottom: 0.2rem;
