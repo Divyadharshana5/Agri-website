@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className="register-bg">
       <div className="glass-card">
-        <img src={logo} alt="Logo" className="login-logo" />
+        <img src={logo} alt="Logo" className="logo" />
                 <h1 className="login-title">Login</h1>
                 <form className="login-form">
                   <label htmlFor="username" className="login-label">

@@ -25,3 +25,13 @@
   height:85vh;
   animation: fadeIn 0.8s ease;
 }
+
+.logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #fff;
+  background: #fff;
+}
