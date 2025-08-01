@@ -5,6 +5,7 @@ import Login from "./components/Login/Login";
 import Language from "./components/Language/Language";
 
 import "./App.css";
+import Register from "./components/Register/Register";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home"); // "home", "language", "login"
@@ -26,6 +27,8 @@ function App() {
         return <Language onLanguageSelect={handleLanguageSelect} />;
       case "login":
         return <Login />;
+      case "register":
+        return <Register/>;
       default:
         return <Home onExploreClick={handleExploreClick} />;
     }
@@ -33,8 +36,10 @@ function App() {
 
   return (
     <div className="app-container">
+
       <Navbar />
       {renderCurrentPage()}
+      
     </div>
   );
 }
