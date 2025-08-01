@@ -74,3 +74,6 @@
   border-color: #222;
 }
 
+.input:focus {
+  border: 1.5px solid #4caf50;
+}
