@@ -8,16 +8,16 @@ import "./App.css";
 import Register from "./components/Register/Register";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home"); // "home", "language", "login"
+  const [currentPage, setCurrentPage] = useState("login"); // "home", "language", "login"
 
   const handleExploreClick = () => {
-    setCurrentPage("language");
+    setCurrentPage("home");
   };
 
   const handleLanguageSelect = (language) => {
-    console.log(`Selected language: ${language}`);
-    setCurrentPage("login");
+    setCurrentPage("language");
   };
+
 
   const handleRegisterClick = () => {
     setCurrentPage("register");
@@ -31,9 +31,9 @@ function App() {
       case "language":
         return <Language onLanguageSelect={handleLanguageSelect} />;
       case "login":
-        return <Login />;
+        return <Login onRegisterClick={handleRegisterClick} />;
       case "register":
-        return <Register onRegisterClick={handleRegisterClick} />;
+        return <Register  />;
       default:
         return <Home onExploreClick={handleExploreClick} />;
     }

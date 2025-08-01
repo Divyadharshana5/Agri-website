@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import logo from "../../../public/logo.png"; // Adjust path if needed
 
-const Login = ({onRegisterClick}) => {
+const Login = ({ onRegisterClick }) => {
   return (
     <div className="login-bg">
       <div className="glass-card">
