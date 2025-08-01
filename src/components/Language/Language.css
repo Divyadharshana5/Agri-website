@@ -1,0 +1,16 @@
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.language-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.language-container button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
