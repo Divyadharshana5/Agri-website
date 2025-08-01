@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
-import Language from "./components/Language/Language";
+
 import "./App.css";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       ) : (
         <Login />
       )}
-      <Language />
     </div>
   );
 }
