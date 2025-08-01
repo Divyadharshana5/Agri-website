@@ -7,7 +7,7 @@ const Register = () => {
     <div className="register-bg">
       <div className="glass-card">
         <img src={logo} alt="Logo" className="logo" />
-                <h1 className="login-title">Login</h1>
+                <h1 className="title">Register</h1>
                 <form className="login-form">
                   <label htmlFor="username" className="login-label">
                     Username:
