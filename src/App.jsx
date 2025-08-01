@@ -19,6 +19,11 @@ function App() {
     setCurrentPage("login");
   };
 
+  const handleRegisterClick = () => {
+    setCurrentPage("register");
+  };
+
+
   const renderCurrentPage = () => {
     switch (currentPage) {
       case "home":
@@ -28,7 +33,7 @@ function App() {
       case "login":
         return <Login />;
       case "register":
-        return <Register/>;
+        return <Register onRegisterClick={handleRegisterClick} />;
       default:
         return <Home onExploreClick={handleExploreClick} />;
     }

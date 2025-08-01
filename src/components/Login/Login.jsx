@@ -31,7 +31,7 @@ const Login = () => {
         </form>
         <div className="register-section">
           <span className="new-user-text">New user?</span>
-          <button className="register-btn">Register</button>
+          <button className="register-btn" onClick={onRegisterClick}>Register</button>
         </div>
         <a href="#" className="hub-link">
           For Hub &rarr;
