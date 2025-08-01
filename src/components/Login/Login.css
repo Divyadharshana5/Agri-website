@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .glass-card {
@@ -16,9 +19,11 @@
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   padding: 2.5rem 2rem;
   width: 340px;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s ease;
 }
 
 .login-logo {
@@ -45,6 +50,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  border-color: black;
 }
 
 .login-label {
@@ -58,11 +64,12 @@
   padding: 0.5rem 1rem;
   border-radius: 12px;
   border: 1.5px solid #aaa;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.18);
   font-size: 1rem;
   outline: none;
   margin-bottom: 0.2rem;
   transition: border 0.2s;
+  border-color: #222;
 }
 
 .login-input:focus {
@@ -84,7 +91,7 @@
 }
 
 .login-submit {
-  width: 100%;
+  width: 50%;
   padding: 0.6rem 0;
   background: #7be495;
   color: #222;
@@ -96,6 +103,7 @@
   cursor: pointer;
   transition: background 0.2s;
   font-family: serif;
+  margin-left: 25%;
 }
 
 .login-submit:hover {
@@ -105,10 +113,18 @@
 
 .register-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   margin: 0.5rem 0 0.2rem 0;
   font-family: serif;
+}
+
+.new-user-text {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
 }
 
 .register-btn {
@@ -143,4 +159,15 @@
 
 .hub-link:hover {
   text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

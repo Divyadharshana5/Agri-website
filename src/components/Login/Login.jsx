@@ -30,7 +30,7 @@ const Login = () => {
           </button>
         </form>
         <div className="register-section">
-          <span>New user?</span>
+          <span className="new-user-text">New user?</span>
           <button className="register-btn">Register</button>
         </div>
         <a href="#" className="hub-link">
