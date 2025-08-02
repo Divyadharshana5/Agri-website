@@ -4,8 +4,12 @@ import logo from "../../../public/logo.png"; // Adjust path if needed
 import Link from "next/link";
 
 const Login = ({ onRegisterClick, OnSubmitClick }) => {
+  const handleSubmitClick = (event) => {
+    event.preventDefault(); // Prevent default form submission
+    OnSubmitClick('welcome'); // Navigate to the 'welcome' page
+  };
   return (
-    <div className="login-bg">
+     <div className="login-bg">
       <div className="glass-card">
         <img src={logo} alt="Logo" className="login-logo" />
         <h1 className="login-title">Login</h1>
@@ -26,7 +30,7 @@ const Login = ({ onRegisterClick, OnSubmitClick }) => {
             </a>
           </div>
 
-          <button onClick={OnSubmitClick} type="submit" className="login-submit">
+          <button onClick={handleSubmitClick} type="submit" className="login-submit">
             Submit
           </button>
         </form>
