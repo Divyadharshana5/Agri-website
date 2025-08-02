@@ -9,14 +9,14 @@ import HubReg from "./components/Hub-reg/Hub-reg";
 import Register from "./components/Register/Register";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("login"); // "home", "language", "login"
+  const [currentPage, setCurrentPage] = useState("home"); // "home", "language", "login"
 
   const handleExploreClick = () => {
-    setCurrentPage("home");
+    setCurrentPage("language");
   };
 
   const handleLanguageSelect = (language) => {
-    setCurrentPage("language");
+    setCurrentPage("login");
   };
 
   const handleLoginClick = () => {
@@ -49,6 +49,8 @@ function App() {
         return <Register onBackToLogin={handleBackToLogin} />;
       case "hubReg":
  return <HubReg onBackToLogin={handleBackToLogin} />;
+      case "welcome": // Placeholder for the Welcome page
+        return <Home onExploreClick={handleExploreClick} />; // Temporarily navigating to home
       default:
         return <Home onExploreClick={handleExploreClick} />;
     }
