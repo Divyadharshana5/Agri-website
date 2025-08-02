@@ -5,6 +5,7 @@ import Login from "./components/Login/Login";
 import Language from "./components/Language/Language";
 
 import "./App.css";
+import HubReg from "./components/Hub-reg/Hub-reg";
 import Register from "./components/Register/Register";
 
 function App() {
@@ -18,9 +19,21 @@ function App() {
     setCurrentPage("language");
   };
 
+  const handleLoginClick = () => {
+    setCurrentPage("login");
+  };
+
 
   const handleRegisterClick = () => {
     setCurrentPage("register");
+  };
+
+  const handleHubRegistrationClick = () => {
+ setCurrentPage("hubReg");
+  };
+
+  const handleBackToLogin = () => {
+    setCurrentPage("login");
   };
 
 
@@ -31,9 +44,11 @@ function App() {
       case "language":
         return <Language onLanguageSelect={handleLanguageSelect} />;
       case "login":
-        return <Login onRegisterClick={handleRegisterClick} OnSubmitClick={handleExploreClick} />;
+        return <Login onRegisterClick={handleRegisterClick} OnSubmitClick={handleExploreClick} onHubRegistrationClick={handleHubRegistrationClick} />;
       case "register":
-        return <Register  />;
+        return <Register onBackToLogin={handleBackToLogin} />;
+      case "hubReg":
+ return <HubReg onBackToLogin={handleBackToLogin} />;
       default:
         return <Home onExploreClick={handleExploreClick} />;
     }
