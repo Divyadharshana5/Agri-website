@@ -35,9 +35,11 @@ const Login = ({ onRegisterClick, OnSubmitClick }) => {
           <button className="register-btn" onClick={onRegisterClick}>Register</button>
         </div>
         <a href="#" className="hub-link">
-          For Hub &rarr;
+          <button className="hub-button">
+          For Hub
+          </button>
         </a>
-      </div>
+        </div>
     </div>
   );
 };

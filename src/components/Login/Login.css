@@ -152,6 +152,8 @@
   text-decoration: none;
   text-align: center;
   font-family: serif;
+ display: block;
+  margin: 0.7rem auto 0 auto;
   letter-spacing: 0.5px;
 }
 
